@@ -14,8 +14,7 @@ NodeJs application
 - Infrastructure as code
 - Rest
 ### :construction: Made with
-- Node 14.16
-- Express 4.18.1
+- AWS Lambda
 
 ### :bulb: Run the App
 To run locally, clone the repo, execute ```npm install``` and then ```npm run start```.
