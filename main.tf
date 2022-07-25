@@ -21,13 +21,13 @@ provider "aws" {
 
 # Crea un bucket en S3 AWS
 resource "aws_s3_bucket" "lambda_bucket" {
-  bucket = "serverless-api-shp-metrics" # Unique name
+  bucket        = "serverless-api-shp-metrics" # Unique name
   force_destroy = true
 }
 
 # Utiliza archive_file para convertir el recurso en zip.
 data "archive_file" "lambda_hello_world" {
-  type = "zip"
+  type        = "zip"
   source_dir  = "${path.module}/src"
   output_path = "${path.module}/hello-world.zip"
 }
