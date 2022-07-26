@@ -1,6 +1,6 @@
 module.exports.handler = async (event) => {
   console.log("Event: ", event);
-  let responseMessage = "Hello, Metrics Team!";
+  let responseMessage = "Hello, Metrics!";
 
   return {
     statusCode: 200,
